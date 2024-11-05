@@ -32,7 +32,7 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-400 via-pink-500 to-red-500 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gradient-to-br from-purple-400 via-pink-500 to-red-500 flex flex-col items-center justify-start p-4 gap-6">
       <Card className="w-full max-w-md bg-white/90 backdrop-blur-sm shadow-xl">
         <CardHeader className="text-center">
           <div className="flex justify-center mb-2">
@@ -81,6 +81,21 @@ const Index = () => {
         <CardFooter className="text-center text-sm text-gray-500">
           Pawn value is estimated at 20% of item value
         </CardFooter>
+      </Card>
+
+      <Card className="w-full max-w-md bg-white/90 backdrop-blur-sm shadow-xl">
+        <CardContent className="p-6">
+          <p className="text-gray-700 mb-4">
+            Use filters to query <span className="font-bold">Completed</span> and <span className="font-bold">Sold</span> listings, and use those prices.
+          </p>
+          <div className="w-full h-[500px] rounded-lg overflow-hidden border border-gray-200">
+            <iframe 
+              src="https://www.ebay.com" 
+              className="w-full h-full"
+              title="eBay Search"
+            />
+          </div>
+        </CardContent>
       </Card>
     </div>
   );
