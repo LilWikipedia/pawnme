@@ -79,7 +79,7 @@ const Index = () => {
         </CardContent>
 
         <CardFooter className="text-center text-sm text-gray-500">
-          Pawn value is estimated at 20% of item value
+          Pawn value is estimated.
         </CardFooter>
       </Card>
 
