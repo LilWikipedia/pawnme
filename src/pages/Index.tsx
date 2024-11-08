@@ -79,7 +79,7 @@ const Index = () => {
         </CardContent>
 
         <CardFooter className="text-center text-sm text-gray-500">
-          Pawn value is estimated.
+          Pawn value is estimated at 20% of item value
         </CardFooter>
       </Card>
 
@@ -88,13 +88,12 @@ const Index = () => {
           <p className="text-gray-700 mb-4">
             Use filters to query <span className="font-bold">Completed</span> and <span className="font-bold">Sold</span> listings, and use those prices.
           </p>
-          <div className="w-full h-[500px] rounded-lg overflow-hidden border border-gray-200">
-            <iframe 
-              src="https://www.ebay.com" 
-              className="w-full h-full"
-              title="eBay Search"
-            />
-          </div>
+          <Button 
+            className="w-full"
+            onClick={() => window.open('https://www.ebay.com', '_blank')}
+          >
+            Open eBay in New Tab
+          </Button>
         </CardContent>
       </Card>
     </div>
